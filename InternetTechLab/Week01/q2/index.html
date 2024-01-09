@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script >
+        $(document).ready(function() {
+            var op1,op2;
+            $("button").click(function() {
+                op1 = parseInt($('#num1').val());  
+                op2 = parseInt($('#num2').val());
+            });
+            $("#addButton").click(function() { alert("Sum = "+(op1+op2));});
+            $("#subButton").click(function() { alert("Sum = "+(op1-op2));});
+            $("#mulButton").click(function() { alert("Sum = "+(op1*op2));});
+            $("#divButton").click(function() { alert("Sum = "+(op1/op2));});  
+        });
+    </script>
+</head>
+<body>
+    <h2>Simple Calculator</h2>
+    <input type="text" id="num1" name=" num1">  
+    <input type="text" id="num2" name=" num2">  
+    <br><br>
+    <button id="addButton"><b>+</b></button>
+    <button id="subButton"><b>-</b></button>
+    <button id="mulButton"><b>*</b></button>
+    <button id="divButton"><b>/</b></button>
+</body>
+</html>
