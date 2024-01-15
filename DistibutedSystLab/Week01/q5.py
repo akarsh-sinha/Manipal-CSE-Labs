@@ -1,0 +1,10 @@
+list1 = [1, 2, 3, 4, 5]
+list1.append(8)
+list1.remove(3)
+print(list1)
+list1.pop()
+list1.insert(1, 2)
+list1.reverse()
+length = len(list1)
+print(length)
+print(list1)
