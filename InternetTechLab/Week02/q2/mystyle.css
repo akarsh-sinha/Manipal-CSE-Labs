@@ -1,0 +1,21 @@
+.btns {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "heading btn-1" "heading btn-2";
+}
+
+.btn-1 {
+    grid-area: btn-1;
+}
+
+.btn-2 {
+    grid-area: btn-2;
+}
+
+.heading {
+    grid-area: heading;
+    display: flex;
+    margin-left: 50%;
+    align-items: center;
+}
